@@ -3,6 +3,7 @@ import Greet from "./components/Greet.tsx";
 import Person from "./components/Person.tsx";
 import PersonList from "./components/PersonList.tsx";
 import Status from "./components/Status.tsx";
+import Heading from "./components/Heading.tsx";
 
 function App() {
     const name = {
@@ -31,6 +32,7 @@ function App() {
           <Person name={name} />
           <PersonList names={personList} />
           <Status status='error' />
+          <Heading>Placeholder text</Heading>
       </div>
   )
 }
