@@ -4,6 +4,7 @@ import Person from "./components/Person.tsx";
 import PersonList from "./components/PersonList.tsx";
 import Status from "./components/Status.tsx";
 import Heading from "./components/Heading.tsx";
+import Oscar from "./components/Oscar.tsx";
 
 function App() {
     const name = {
@@ -33,6 +34,10 @@ function App() {
           <PersonList names={personList} />
           <Status status='error' />
           <Heading>Placeholder text</Heading>
+          <Oscar>
+              <Heading>Oscar goes to Leonardo Dicaprio</Heading>
+          </Oscar>
+          <Greet name="Sade Miller" isLoggedIn={false} />
       </div>
   )
 }
