@@ -6,6 +6,8 @@ import Status from "./components/Status.tsx";
 import Heading from "./components/Heading.tsx";
 import Oscar from "./components/Oscar.tsx";
 import Input from "./components/Input.tsx";
+import Button from "./components/Button.tsx";
+import Container from "./components/Container.tsx";
 
 function App() {
     const name = {
@@ -39,8 +41,9 @@ function App() {
               <Heading>Oscar goes to Leonardo Dicaprio</Heading>
           </Oscar>
           <Greet name="Sade Miller" isLoggedIn={false} />
-          <Button hanldeClick={(event, id) => console.log('clicked', event, id)} />
+          <Button handleClick={(event, id) => console.log('clicked', event, id)} />
           <Input value="" handleChange={event => console.log(event)} />
+          <Container styles={{border: '1px solid red', padding: '1rem'}} />
       </div>
   )
 }
