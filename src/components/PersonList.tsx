@@ -1,10 +1,8 @@
 import Person from "./Person.tsx";
+import type {Name} from "./Person.types.ts";
 
 type PersonListProps = {
-    names: {
-        first: string
-        last: string
-    }[]
+    names: Name[]
 }
 export default function PersonList(props: PersonListProps) {
     return (

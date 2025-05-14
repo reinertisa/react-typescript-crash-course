@@ -1,9 +1,5 @@
-type PersonProps = {
-    name: {
-        first: string
-        last: string
-    }
-}
+import type {PersonProps} from "./Person.types.ts";
+
 
 export default function Person(props: PersonProps) {
     return (
