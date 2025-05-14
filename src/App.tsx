@@ -8,6 +8,7 @@ import Oscar from "./components/Oscar.tsx";
 import Input from "./components/Input.tsx";
 import Button from "./components/Button.tsx";
 import Container from "./components/Container.tsx";
+import Input1 from "./components/Input1.tsx";
 
 function App() {
     const name = {
@@ -44,6 +45,7 @@ function App() {
           <Button handleClick={(event, id) => console.log('clicked', event, id)} />
           <Input value="" handleChange={event => console.log(event)} />
           <Container styles={{border: '1px solid red', padding: '1rem'}} />
+          <Input1 value="" handleChange={event => console.log(event)} />
       </div>
   )
 }
