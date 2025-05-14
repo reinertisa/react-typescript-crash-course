@@ -11,6 +11,7 @@ import Container from "./components/Container.tsx";
 import Input1 from "./components/Input1.tsx";
 import LoggedIn from "./components/LoggedIn.tsx";
 import User from "./components/User.tsx";
+import User1 from "./components/User1.tsx";
 
 function App() {
     const name = {
@@ -50,6 +51,7 @@ function App() {
           <Input1 value="" handleChange={event => console.log(event)} />
           <LoggedIn />
           <User />
+          <User1 />
       </div>
   )
 }
