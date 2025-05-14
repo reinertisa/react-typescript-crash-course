@@ -10,6 +10,7 @@ import Button from "./components/Button.tsx";
 import Container from "./components/Container.tsx";
 import Input1 from "./components/Input1.tsx";
 import LoggedIn from "./components/LoggedIn.tsx";
+import User from "./components/User.tsx";
 
 function App() {
     const name = {
@@ -48,6 +49,7 @@ function App() {
           <Container styles={{border: '1px solid red', padding: '1rem'}} />
           <Input1 value="" handleChange={event => console.log(event)} />
           <LoggedIn />
+          <User />
       </div>
   )
 }
