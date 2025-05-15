@@ -6,7 +6,7 @@ type CounterState = {
 }
 
 type CounterAction = {
-    type: 'increment' | 'decrement'
+    type: string,
     payload: number
 }
 
