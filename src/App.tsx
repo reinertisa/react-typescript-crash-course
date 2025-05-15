@@ -13,6 +13,7 @@ import LoggedIn from "./components/LoggedIn.tsx";
 import User from "./components/User.tsx";
 import User1 from "./components/User1.tsx";
 import Counter from "./components/state/Counter.tsx";
+import Counter2 from "./components/state/Counter2.tsx";
 
 function App() {
     const name = {
@@ -54,6 +55,7 @@ function App() {
           <User />
           <User1 />
           <Counter />
+          <Counter2 />
       </div>
   )
 }
