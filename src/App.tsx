@@ -14,6 +14,8 @@ import User from "./components/User.tsx";
 import User1 from "./components/User1.tsx";
 import Counter from "./components/state/Counter.tsx";
 import Counter2 from "./components/state/Counter2.tsx";
+import Box from "./components/context/Box.tsx";
+import ThemeContextProvider from "./components/context/ThemeContext.tsx";
 
 function App() {
     const name = {
@@ -56,6 +58,9 @@ function App() {
           <User1 />
           <Counter />
           <Counter2 />
+          <ThemeContextProvider>
+              <Box />
+          </ThemeContextProvider>
       </div>
   )
 }
