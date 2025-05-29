@@ -20,6 +20,8 @@ import UserContextProvider from "./components/context/UserContext.tsx";
 import User3 from "./components/context/User3.tsx";
 import DomRef from "./components/useref/DomRef.tsx";
 import MutableRef from "./components/useref/MutableRef.tsx";
+import Private from "./components/auth/Private.tsx";
+import Profile from "./components/auth/Profile.tsx";
 
 
 function App() {
@@ -71,6 +73,7 @@ function App() {
           </UserContextProvider>
           <DomRef />
           <MutableRef />
+          <Private isLoggedIn={true} component={Profile} />
       </div>
   )
 }
