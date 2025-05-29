@@ -19,6 +19,7 @@ import ThemeContextProvider from "./components/context/ThemeContext.tsx";
 import UserContextProvider from "./components/context/UserContext.tsx";
 import User3 from "./components/context/User3.tsx";
 import DomRef from "./components/useref/DomRef.tsx";
+import MutableRef from "./components/useref/MutableRef.tsx";
 
 
 function App() {
@@ -69,6 +70,7 @@ function App() {
               <User3 />
           </UserContextProvider>
           <DomRef />
+          <MutableRef />
       </div>
   )
 }
