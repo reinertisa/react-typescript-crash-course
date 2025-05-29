@@ -13,5 +13,4 @@ export default function DomRef() {
             <input ref={inputRef} type="text" />
         </div>
     )
-
 }
