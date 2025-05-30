@@ -22,6 +22,7 @@ import DomRef from "./components/useref/DomRef.tsx";
 import MutableRef from "./components/useref/MutableRef.tsx";
 import Private from "./components/auth/Private.tsx";
 import Profile from "./components/auth/Profile.tsx";
+import List1 from "./components/generics/List1.tsx";
 
 
 function App() {
@@ -74,6 +75,8 @@ function App() {
           <DomRef />
           <MutableRef />
           <Private isLoggedIn={true} component={Profile} />
+          <List1 items={['Isa', 'Sade', 'Krist']} onClick={(item) => console.log(item)} />
+          <List1 items={[1, 2, 3]} onClick={(item) => console.log(item)} />
       </div>
   )
 }
