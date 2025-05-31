@@ -24,6 +24,7 @@ import Private from "./components/auth/Private.tsx";
 import Profile from "./components/auth/Profile.tsx";
 import List1 from "./components/generics/List1.tsx";
 import List2 from "./components/generics/List2.tsx";
+import RandomNumber from "./components/restriction/RandomNumber.tsx";
 
 
 function App() {
@@ -85,6 +86,7 @@ function App() {
               ]}
               onClick={(item) => console.log(item)}
           />
+          <RandomNumber value={10} isPositive={true} />
       </div>
   )
 }
