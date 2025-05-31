@@ -25,6 +25,7 @@ import Profile from "./components/auth/Profile.tsx";
 import List1 from "./components/generics/List1.tsx";
 import List2 from "./components/generics/List2.tsx";
 import RandomNumber from "./components/restriction/RandomNumber.tsx";
+import Toast from "./components/templateliterals/Toast.tsx";
 
 
 function App() {
@@ -87,6 +88,7 @@ function App() {
               onClick={(item) => console.log(item)}
           />
           <RandomNumber value={10} isPositive={true} />
+          <Toast position="center" />
       </div>
   )
 }
