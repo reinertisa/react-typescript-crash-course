@@ -23,6 +23,7 @@ import MutableRef from "./components/useref/MutableRef.tsx";
 import Private from "./components/auth/Private.tsx";
 import Profile from "./components/auth/Profile.tsx";
 import List1 from "./components/generics/List1.tsx";
+import List2 from "./components/generics/List2.tsx";
 
 
 function App() {
@@ -77,6 +78,13 @@ function App() {
           <Private isLoggedIn={true} component={Profile} />
           <List1 items={['Isa', 'Sade', 'Krist']} onClick={(item) => console.log(item)} />
           <List1 items={[1, 2, 3]} onClick={(item) => console.log(item)} />
+          <List2
+              items={[
+                  {id: 1, name: 'Isa'},
+                  {id: 2, name: 'Sade'},
+              ]}
+              onClick={(item) => console.log(item)}
+          />
       </div>
   )
 }
