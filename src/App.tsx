@@ -28,6 +28,7 @@ import RandomNumber from "./components/restriction/RandomNumber.tsx";
 import Toast from "./components/templateliterals/Toast.tsx";
 import CustomButton from "./components/html/Button.tsx";
 import CustomInput from "./components/html/Input.tsx";
+import CustomComponent from "./components/html/CustomComponent.tsx";
 
 
 function App() {
@@ -95,6 +96,7 @@ function App() {
               Primary button
           </CustomButton>
           <CustomInput />
+          <CustomComponent name={'isa'} isLoggedIn={false} />
       </div>
   )
 }
