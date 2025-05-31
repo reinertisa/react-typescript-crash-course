@@ -26,6 +26,8 @@ import List1 from "./components/generics/List1.tsx";
 import List2 from "./components/generics/List2.tsx";
 import RandomNumber from "./components/restriction/RandomNumber.tsx";
 import Toast from "./components/templateliterals/Toast.tsx";
+import CustomButton from "./components/html/Button.tsx";
+import CustomInput from "./components/html/Input.tsx";
 
 
 function App() {
@@ -89,6 +91,10 @@ function App() {
           />
           <RandomNumber value={10} isPositive={true} />
           <Toast position="center" />
+          <CustomButton variant='primary' onClick={() => console.log('clicked')}>
+              Primary button
+          </CustomButton>
+          <CustomInput />
       </div>
   )
 }
